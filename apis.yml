@@ -1,20 +1,47 @@
 aid: bloomon
 name: Bloomon
-description: 'Bloomon is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Bloomon is a flower and gift delivery service that lets customers order
+  one-off bouquets or sign up for a recurring flower subscription delivered on a chosen
+  cadence. It offers seasonal hand-tied and letterbox arrangements, gifting options,
+  gift vouchers, and add-ons, with delivery across the United Kingdom and other European
+  markets. Bloomon is part of the Bloom & Wild Group (confirmed via its published
+  .well-known/security.txt, which points to bloomandwild.com). The company operates
+  a consumer-facing e-commerce and subscription website rather than a public developer
+  API; this API Evangelist profile therefore captures its web, security, and discovery
+  surface rather than a machine-readable API.'
 url: https://raw.githubusercontent.com/api-evangelist/bloomon/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.bloomon.co.uk/assets/branded-icons/logo.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - partech
+x-parent: bloom-and-wild-group
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Flowers
+- Flower Delivery
+- Subscription
+- E-Commerce
+- Gifting
+- Retail
+- Bloom & Wild Group
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +51,32 @@ maintainers:
 common:
 - type: Website
   url: https://www.bloomon.co.uk/
+- type: Blog
+  url: https://www.bloomon.co.uk/blog
+- type: Support
+  url: https://www.bloomon.co.uk/help/
+- type: HelpCenter
+  url: https://www.bloomon.co.uk/help/
+- type: SignUp
+  url: https://www.bloomon.co.uk/register
+- type: Login
+  url: https://www.bloomon.co.uk/login
+- type: TermsOfService
+  url: https://www.bloomon.co.uk/about-bloomon/terms
+- type: PrivacyPolicy
+  url: https://www.bloomon.co.uk/about-bloomon/privacy-policy
+- type: WellKnown
+  url: well-known/bloomon-well-known.yml
+- type: SecurityTxt
+  url: well-known/bloomon-security.txt
+- type: Security
+  url: https://www.bloomon.co.uk/.well-known/security.txt
+- type: VulnerabilityDisclosure
+  url: security/bloomon-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/bloomon-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
